@@ -20,7 +20,7 @@ A visually appealing habit tracking application featuring a unique wheel-based i
 
 1. Clone the repository:
 ```
-git clone https://github.com/yourusername/habit-tracker-wheel.git
+git clone https://github.com/anshulmittal712/habit-tracker.git
 ```
 
 
