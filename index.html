@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker Wheel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <input type="month" id="monthInput">
+            <div class="file-controls">
+                <button id="exportBtn">Export CSV</button>
+                <input type="file" id="importInput" accept=".csv" style="display: none;">
+                <button id="importBtn">Import CSV</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="habits-panel">
+                <div class="daily-habits">
+                    <h2>Daily Habits</h2>
+                    <div class="habit-input">
+                        <input type="text" placeholder="Add daily habit">
+                        <button class="add-habit">+</button>
+                    </div>
+                    <div class="monthly-summary">
+                        <div id="summaryContainer">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weekly-habits">
+                    <h2>Weekly Habits</h2>
+                    <div id="weeklyHabitsContainer">
+                        <div class="habit-input">
+                            <input type="text" placeholder="Add weekly habit">
+                            <button class="add-habit">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="monthly-habits">
+                    <h2>Monthly Habits</h2>
+                    <div id="monthlyHabitsContainer">
+                        <div class="habit-input">
+                            <input type="text" placeholder="Add monthly habit">
+                            <button class="add-habit">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="habit-wheel-container">
+                <svg id="habitWheel" viewBox="0 0 600 500">
+                    <!-- Will be populated by JavaScript -->
+                </svg>
+            </div>
+        </main>
+    </div>
+    <script src="habitTracker.js"></script>
+</body>
+</html> 
